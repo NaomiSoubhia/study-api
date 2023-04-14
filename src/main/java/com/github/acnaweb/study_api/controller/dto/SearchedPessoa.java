@@ -5,6 +5,7 @@ import com.github.acnaweb.study_api.model.Pessoa;
 public class SearchedPessoa {
 	private Long id;
 	private String nome;
+
 	public Long getId() {
 		return id;
 	}

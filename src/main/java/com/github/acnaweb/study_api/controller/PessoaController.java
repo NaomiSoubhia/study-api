@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.acnaweb.study_api.controller.dto.PessoaCreated;
-import com.github.acnaweb.study_api.controller.dto.PessoaUpdated;
+import com.github.acnaweb.study_api.controller.dto.PessoaRequestCreate;
+import com.github.acnaweb.study_api.controller.dto.PessoaRequestUpdate;
 import com.github.acnaweb.study_api.controller.dto.SearchedPessoa;
 import com.github.acnaweb.study_api.model.Pessoa;
 import com.github.acnaweb.study_api.repository.PessoaRepository;
@@ -40,7 +41,7 @@ public class PessoaController {
 	}
 
 	@PostMapping	
-	public Pessoa create(PessoaCreated dto) {
+	public Pessoa create(@RequestBody PessoaRequestCreate dto) {
 		// DE PARAmapeamento entre dto e o model
 		// DEPARA mapeamento entre PessoaCreated e Pessoa
 		
@@ -55,7 +56,7 @@ public class PessoaController {
 	}
 
 	@PutMapping
-	public Pessoa update(PessoaUpdated dto) {
+	public Pessoa update(Long id,@RequestBody PessoaRequestUpdate dto) {
 		// verificar se o id informado já existe
 		
 		boolean exists =

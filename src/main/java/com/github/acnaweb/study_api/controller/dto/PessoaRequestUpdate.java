@@ -1,9 +1,15 @@
 package com.github.acnaweb.study_api.controller.dto;
 
-public class PessoaCreated {
+public class PessoaRequestUpdate {
+	private Long id;
 	private String nome;
 	private int idade;
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -16,5 +22,6 @@ public class PessoaCreated {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+	
 	
 }
