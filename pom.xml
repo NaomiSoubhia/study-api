@@ -15,6 +15,7 @@
 	<description>Aplicação de estudo de API com Spring</description>
 	<properties>
 		<java.version>8</java.version>
+		<ojdbc8.version>23.2.0.0</ojdbc8.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,6 +53,12 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+   			 <groupId>com.oracle.database.jdbc</groupId>
+   			 <artifactId>ojdbc8</artifactId>
+  		    <version>${ojdbc8.version}</version>
+		</dependency>
+		
 
 	</dependencies>
 	<build>
