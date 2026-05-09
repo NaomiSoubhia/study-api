@@ -13,7 +13,7 @@ This project was developed to practice backend development, API design, and docu
 - Full CRUD operations
 - RESTful architecture
 - JSON data handling
-- Organized MVC structure (if applicable)
+- Organized MVC structure 
 - API documentation with Swagger
 - Scalable backend foundation
 
