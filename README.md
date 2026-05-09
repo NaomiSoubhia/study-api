@@ -24,7 +24,7 @@ This project was developed to practice backend development, API design, and docu
 - Node.js
 - Express.js
 - Swagger (OpenAPI)
-- (Add your DB here → MongoDB / MySQL / SQLite)
+- H2
 - Postman (for testing)
 - Git & GitHub
 
