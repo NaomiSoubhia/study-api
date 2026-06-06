@@ -1,6 +1,6 @@
 # 📄 README.md - Swagger
 
-```md
+
 # 📚 Study API
 
 A RESTful API built for managing study-related resources such as notes, tasks, or learning materials.  
